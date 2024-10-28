@@ -1,18 +1,12 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/NavBar";
-import {Roboto} from "next/dist/compiled/@next/font/dist/google";
+import { Roboto } from 'next/font/google';
+import NavBar from "@/components/NavBar";
 
-
-const geistSans = localFont({
-    src: "./fonts/GeistVF.woff",
-    variable: "--font-geist-sans",
-    weight: "100 900",
-});
-const geistMono = localFont({
-    src: "./fonts/GeistMonoVF.woff",
-    variable: "--font-geist-mono",
-    weight: "100 900",
+const roboto = Roboto({
+    weight: '700',
+    subsets: ['latin'],
 });
 
 export const metadata = {
@@ -23,7 +17,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html suppressHydrationWarning lang="en">
-        <body >
+        <body className={roboto.className}>
         <main className="w-full">{children}</main>
         </body>
         </html>
