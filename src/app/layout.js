@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/NavBar";
-import { Roboto } from 'next/font/google';
+import {Roboto} from 'next/font/google';
 import NavBar from "@/components/NavBar";
 
 const roboto = Roboto({
