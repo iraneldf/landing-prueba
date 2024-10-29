@@ -1,3 +1,5 @@
+import {IoArrowBack, IoArrowForward} from "react-icons/io5";
+
 export default function About() {
     return (
         <div className="py-[160px] px-[80px] bg-[#FFFBEB]">
@@ -7,13 +9,15 @@ export default function About() {
                 <h1 className='font-bold leading-[61.6px] text-[56px]'>Because they love us</h1>
 
                 <div className='flex gap-[24px]'>
-                    <button className="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
-                        ☕
+                    <button
+                        className="flex items-center justify-center w-[48px] h-[48px] bg-transparent text-[#78350F] rounded-full border-2 border-[#78350F] transition-transform duration-300 ease-in-out hover:bg-[#78350F] hover:text-white hover:shadow-lg">
+                        <IoArrowBack className='w-[24px] h-[24px]'/>
                     </button>
                     <button
-                        className="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
-                        ☕
+                        className="flex items-center justify-center w-[48px] h-[48px] bg-transparent text-[#78350F] rounded-full border-2 border-[#78350F] transition-transform duration-300 ease-in-out hover:bg-[#78350F] hover:text-white hover:shadow-lg">
+                        <IoArrowForward className='w-[24px] h-[24px]'/>
                     </button>
+
                 </div>
 
 
