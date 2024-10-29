@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Fotter() {
     return (
-        <div className='px-[80px] bg-[#0F172A]'>
+        <div className='px-[16px] md:px-[80px] bg-[#0F172A]'>
 
-            <div className='flex gap-[48px] justify-around py-[48px] border-t-[1px] border-b-[1px] border-[#334155]'>
+            <div className='flex flex-col items-center text-center md:text-left md:flex-row gap-[48px] justify-around py-[48px] border-t-[1px] border-b-[1px] border-[#334155]'>
                 <div>
                     <p className='py-[12px] text-white font-bold'>Product</p>
                     <p className='py-[12px] text-[#E2E8F0]'>Pricing</p>
@@ -36,13 +36,13 @@ export default function Fotter() {
 
                 <div>
                     <p className='py-[12px] text-white font-[500]'>Get the App</p>
-                    <div className='py-[12px] text-white'>
+                    <div className='flex justify-center md:block py-[12px] text-white'>
                         <Image src={'/fotter components/App Store - Filled.svg'}
                                alt={'App store'}
                                width={120}
                                height={40}/>
                     </div>
-                    <div className='py-[12px] text-white'>
+                    <div className='flex justify-center md:block py-[12px] text-white'>
                         <Image src={'/fotter components/Google Play.svg'}
                                alt={'App store'}
                                width={135}
@@ -89,8 +89,8 @@ export default function Fotter() {
 
 
 
-            <div className='flex justify-between gap-[48px] py-[24px]'>
-                <p className='w-full text-white'>Collers @ 2023. All rights reserved.</p>
+            <div className='flex flex-col items-center lg:flex-row justify-center lg:justify-between gap-[24px] lg:gap-[48px] py-[24px]'>
+                <p className='text-white'>Collers @ 2023. All rights reserved.</p>
 
                 <div className='flex gap-[32px] text-white'>
                     <div className='py-[12px]'>Terms</div>
