@@ -1,4 +1,10 @@
+'use client'
 import {IoArrowBack, IoArrowForward} from "react-icons/io5";
+import Carrusel from "@/components/About/Carrusel";
+
+// import dynamic from 'next/dynamic';
+//
+// const Carrusel = dynamic(() => import("@/components/About/Carrusel"), {ssr: false});
 
 export default function About() {
     return (
@@ -19,9 +25,10 @@ export default function About() {
                     </button>
 
                 </div>
-
-
             </div>
+
+
+                <Carrusel/>
 
         </div>
 

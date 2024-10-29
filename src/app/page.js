@@ -4,6 +4,7 @@ import Prensentacion from "@/components/Prensentacion";
 import Gallery from "@/components/Gallery";
 import Frame3 from "@/components/Frame3";
 import About from "@/components/About";
+import Fotter from "@/components/Fotter";
 
 export default function Home() {
     return (
@@ -29,7 +30,7 @@ export default function Home() {
 
             <About/>
 
-
+            <Fotter/>
         </div>
     );
 }
