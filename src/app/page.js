@@ -5,6 +5,8 @@ import Gallery from "@/components/Gallery";
 import Frame3 from "@/components/Frame3";
 import About from "@/components/About";
 import Fotter from "@/components/Fotter";
+import Amazing from "@/components/Amazing";
+import Articles from "@/components/Articles";
 
 export default function Home() {
     return (
@@ -29,6 +31,10 @@ export default function Home() {
             <Frame3/>
 
             <About/>
+
+            <Articles/>
+
+            <Amazing/>
 
             <Fotter/>
         </div>
