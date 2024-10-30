@@ -31,7 +31,7 @@ export default function Amazing() {
                                 diam</p>
                         </div>
 
-                        <Image src={'/images/card/PictureCard1.svg'} alt={'Card image'} width={270} height={220}/>
+                        <Image src={'/images/card/PictureCard1.svg'} alt={'Card image'} width={170} height={220}/>
                     </div>
 
                     <div className='p-[16px]'>
