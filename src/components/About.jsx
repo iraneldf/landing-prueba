@@ -1,34 +1,24 @@
-import {IoArrowBack, IoArrowForward} from "react-icons/io5";
-import EmblaCarousel from "@/components/About/Carrusel2";
+import Carousel from "@/components/About/Carrusel2";
+import CarruselControls from "@/components/About/CarruselControls";
 
 // import dynamic from 'next/dynamic';
 //
 // const Carrusel = dynamic(() => import("@/components/About/Carrusel"), {ssr: false});
 
 export default function About() {
+
     return (
-        <div className="flex flex-col gap-[80px] py-[160px] px-[80px] bg-[#FFFBEB]">
+        <div className="flex flex-col gap-[32px] lg:gap-[80px] py-[48px] px-[16px] lg:py-[160px] lg:px-[80px] lg:bg-[#FFFBEB] relative overflow-auto">
 
-            <div className='flex gap-[48px] justify-between'>
+            <div className='flex gap-[48px] justify-center lg:justify-between'>
 
-                <h1 className='font-bold leading-[61.6px] text-[56px]'>Because they love us</h1>
+                <h1 className='font-bold leading-[61.6px]  text-[32px] lg:text-[56px]'>Because they love us</h1>
 
-                <div className='flex gap-[24px]'>
-                    <button
-                        className="flex items-center justify-center w-[48px] h-[48px] bg-transparent text-[#78350F] rounded-full border-2 border-[#78350F] transition-transform duration-300 ease-in-out hover:bg-[#78350F] hover:text-white hover:shadow-lg">
-                        <IoArrowBack className='w-[24px] h-[24px]'/>
-                    </button>
-                    <button
-                        className="flex items-center justify-center w-[48px] h-[48px] bg-transparent text-[#78350F] rounded-full border-2 border-[#78350F] transition-transform duration-300 ease-in-out hover:bg-[#78350F] hover:text-white hover:shadow-lg">
-                        <IoArrowForward className='w-[24px] h-[24px]'/>
-                    </button>
-
-                </div>
+                <CarruselControls/>
             </div>
 
-            <EmblaCarousel/>
-
-
+            <div className='absolute top-[125px] lg:top-[260px] self-center bg-[#FDE68A] w-full lg:w-[calc(100%-40px)] h-[277px] lg:h-[421px]'/>
+            <Carousel/>
 
         </div>
 
