@@ -1,49 +1,63 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Slider from "react-slick";
+import CarruelItem from "@/components/About/CarruelItem";
 
 function Carrusel() {
     const settings = {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "60px",
+        centerPadding: "530px",
+        adaptiveHeight:true,
         slidesToShow: 3,
-        speed: 500
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 500,
+        arrows: false, // Desactiva los botones de navegación
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+
     };
     return (
-        <div className="h-full">
+
+        <div className="slider-container mx-[-42px]">
             <Slider {...settings}>
 
-                <div className='bg-white flex flex-col gap-[16px] rounded-[20px] p-[32] mx-11 w-[320px]'>
-                    <h1 className='text-[#475569]'>SHELLS</h1>
-                    <p>Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis
-                        velit semper lectus sed ornare quam nulla.</p>
-                    <span>Hellena John</span>
-                </div>
+                    <CarruelItem/>
 
-                <div className='bg-white flex flex-col gap-[16px] rounded-[20px] p-[32] mx-11 w-[320px]'>
-                    <h1 className='text-[#475569]'>SHELLS</h1>
-                    <p>Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis
-                        velit semper lectus sed ornare quam nulla.</p>
-                    <span>Hellena John</span>
-                </div>
+                    <CarruelItem/>
 
-                <div className='bg-white flex flex-col gap-[16px] rounded-[20px] p-[32] mx-11 w-[320px]'>
-                    <h1 className='text-[#475569]'>SHELLS</h1>
-                    <p>Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis
-                        velit semper lectus sed ornare quam nulla.</p>
-                    <span>Hellena John</span>
-                </div>
+                    <CarruelItem/>
 
-                <div className='bg-white flex flex-col gap-[16px] rounded-[20px] p-[32] mx-11 w-[320px]'>
-                    <h1 className='text-[#475569]'>SHELLS</h1>
-                    <p>Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis
-                        velit semper lectus sed ornare quam nulla.</p>
-                    <span>Hellena John</span>
-                </div>
+                    <CarruelItem/>
 
+                    <CarruelItem/>
             </Slider>
         </div>
     );

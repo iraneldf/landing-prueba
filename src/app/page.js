@@ -32,7 +32,7 @@ export default function Home() {
 
             <Frame3/>
 
-            {/*<About/>*/}
+            <About/>
 
             <Grow/>
 

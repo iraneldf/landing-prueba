@@ -1,6 +1,5 @@
-'use client'
 import {IoArrowBack, IoArrowForward} from "react-icons/io5";
-import Carrusel from "@/components/About/Carrusel";
+import EmblaCarousel from "@/components/About/Carrusel2";
 
 // import dynamic from 'next/dynamic';
 //
@@ -8,7 +7,7 @@ import Carrusel from "@/components/About/Carrusel";
 
 export default function About() {
     return (
-        <div className="py-[160px] px-[80px] bg-[#FFFBEB]">
+        <div className="flex flex-col gap-[80px] py-[160px] px-[80px] bg-[#FFFBEB]">
 
             <div className='flex gap-[48px] justify-between'>
 
@@ -27,8 +26,9 @@ export default function About() {
                 </div>
             </div>
 
+            <EmblaCarousel/>
 
-                <Carrusel/>
+
 
         </div>
 
