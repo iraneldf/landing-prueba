@@ -24,7 +24,7 @@ export default function Prensentacion() {
                             up now
                         </button>
 
-                        <button className="flex items-center rounded-[8px] text-[#78350F]">
+                        <button className="z-20 flex items-center rounded-[8px] text-[#78350F]">
                             <Image
                                 src="/images/icons/Vector.svg"
                                 alt="Vector"

@@ -7,8 +7,8 @@ export default function Grow() {
             className=" pt-[48px] px-[16px] pb-[96px] xl:px-[80px] xl:pt-[80px] xl:pb-[128px] lg:bg-[#FFFBEB] w-[1,440px] flex flex-col gap-[32px] xl:gap-[80px] relative">
 
             <div className='z-10 flex flex-col gap-[32px] xl:text-left text-center '>
-                <h1 className='text-[56px] font-bold leading-[61.6px]'>Grow your collection</h1>
-                <p className='text-[18px] leading-[18px]'>Enim neque massa porta adipiscing elit. Sem libero id faucibus
+                <h1 className='text-[32px] lg:text-[56px] font-bold leading-[61.6px]'>Grow your collection</h1>
+                <p className='text-[18px] text-center lg:text-left leading-[18px]'>Enim neque massa porta adipiscing elit. Sem libero id faucibus
                     nibh amet dictum pellentesque sed. Eu
                     non turpis risus odio sapien, fames sit rhoncus.
                     Nec magna sed interdum sit purus tellus. Et volutpat proin neque placerat at bibendum quam

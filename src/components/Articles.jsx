@@ -15,7 +15,7 @@ export default function Articles() {
             </div>
 
 
-            <div className='z-10 flex flex-col lg:flex-row self-center gap-[24px]'>
+            <div className='z-10 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1  self-center gap-[24px]'>
                 {/*tarjeta*/}
                 <div style={{boxShadow: '0px 10px 15px -3px #0000001A'}}
                      className='max-w-[302px] rounded-[10px] border-[1px] border-[#E2E8F0] bg-white overflow-hidden
