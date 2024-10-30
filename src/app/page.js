@@ -8,6 +8,7 @@ import Fotter from "@/components/Fotter";
 import Amazing from "@/components/Amazing";
 import Articles from "@/components/Articles";
 import MapCollection from "@/components/MapCollection";
+import Grow from "@/components/Grow";
 
 export default function Home() {
     return (
@@ -31,7 +32,9 @@ export default function Home() {
 
             <Frame3/>
 
-            <About/>
+            {/*<About/>*/}
+
+            <Grow/>
 
             <MapCollection/>
 
