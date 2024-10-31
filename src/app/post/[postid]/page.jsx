@@ -14,16 +14,26 @@ const PostDetails = async ({params}) => {
     const user = await userRes.json();
 
     return (
-        <div className='p-6 bg-amber-100 w-full h-screen'>
-            <div className="container mx-auto ">
+        <div className='bg-amber-100 w-full r h-screen'>
+            <header className="z-20 flex justify-center items-center p-[16px] lg:px-[80px] lg:py-[24px] ">
+                <Link href={'/'}>
+                    <button
+                        className={'border-2 border-[#78350F] px-4 py-2 rounded hover:bg-[#78350F] hover:text-white'}>
+                        Volver a pagina principal
+                    </button>
+                </Link>
+
+            </header>
+            <div className="p-6  container mx-auto flex flex-col items-center">
+
                 <h1 className="text-2xl font-bold mb-4">Detalles del Post {post.id}</h1>
                 <h2 className="text-2xl font-bold mb-4">{post.title}</h2>
-                <p className="text-gray-700 mb-4">{post.body}</p>
+                <p className="text-gray-700 mb-4 md:w-[80%]">{post.body}</p>
 
                 {/* Sección de detalles del usuario */}
-                <div className="bg-white shadow-lg rounded-lg p-6 mt-6 border border-gray-300">
+                <div className="bg-white shadow-lg md:w-[50%] rounded-lg p-6 mt-6 border border-gray-300">
                     <h2 className="font-semibold text-xl border-b pb-2 mb-4">Detalles del Usuario (Autor del Post)</h2>
-                    <div className="flex flex-col space-y-2">
+                    <div className="flex flex-col gap-1 space-y-2 ">
                         <div className="flex justify-between">
                             <span className="font-medium">Nombre:</span>
                             <span>{user.name}</span>
@@ -47,7 +57,13 @@ const PostDetails = async ({params}) => {
                         {/* Información adicional */}
                         <div className="flex justify-between">
                             <span className="font-medium">Dirección:</span>
-                            <span>{`${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}`}</span>
+                            <div className='flex flex-col items-end'>
+                                <span>{user.address.street}</span>
+                                <span> {user.address.suite}</span>
+                                <span>{user.address.city}</span>
+                                <span>{user.address.zipcode}</span>
+                            </div>
+
                         </div>
                         <div className="flex justify-between">
                             <span className="font-medium">Sitio Web:</span>

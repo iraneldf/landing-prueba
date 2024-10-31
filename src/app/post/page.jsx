@@ -18,11 +18,12 @@ const Posts = async () => {
     return (
         <div className={'bg-amber-100 h-full flex flex-col items-center'}>
             <header className="z-20 flex justify-between items-center p-[16px] lg:px-[80px] lg:py-[24px] ">
-
-                <button
-                    className={'border-2 border-[#78350F] px-4 py-2 rounded hover:bg-[#78350F] hover:text-white'}>
-                    Volver a pagina principal
-                </button>
+                <Link href={'/'}>
+                    <button
+                        className={'border-2 border-[#78350F] px-4 py-2 rounded hover:bg-[#78350F] hover:text-white'}>
+                        Volver a pagina principal
+                    </button>
+                </Link>
 
             </header>
 

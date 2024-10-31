@@ -8,7 +8,7 @@ const PaginatedPosts = () => {
     const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false);
     const [totalPosts, setTotalPosts] = useState(0);
-    const postsPerPage = 5; // Número de publicaciones por página
+    const postsPerPage = 6; // Número de publicaciones por página
 
     const fetchPosts = async (page) => {
         setLoading(true);
@@ -45,30 +45,9 @@ const PaginatedPosts = () => {
         <div className="container mx-auto p-6">
             <h2 className="text-xl font-bold mb-4">Publicaciones de 5 en 5 con Paginación</h2>
 
-            {loading && <p className="text-center">Cargando publicaciones...</p>}
-            {!loading && (
-                <div className="flex justify-center gap-32 mb-4">
-                    <button
-                        onClick={() => setPage(prev => Math.max(prev - 1, 1))}
-                        disabled={page === 1}
-                        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200"
-                    >
-                        Anterior
-                    </button>
-                    <button
-                        onClick={() => setPage(prev => Math.min(prev + 1, Math.ceil(totalPosts / postsPerPage)))}
-                        disabled={page * postsPerPage >= totalPosts}
-                        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200"
-                    >
-                        Siguiente
-                    </button>
-                </div>
-
-            )}
-
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
                 {posts.map(post => (
-                    <div key={post.id} className="bg-white p-4 rounded shadow hover:shadow-lg transition-shadow duration-200">
+                    <div key={post.id} className="bg-white p-4 rounded transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
                         <h2 className="font-semibold text-lg">{post.title}</h2>
                         <p className="text-gray-700">{post.body}</p>
                         {/* Mostrar el nombre y email del usuario */}

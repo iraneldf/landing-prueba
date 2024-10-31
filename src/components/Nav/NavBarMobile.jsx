@@ -1,5 +1,6 @@
 'use client'
 import {useNav} from "@/context/NavContext";
+import Link from "next/link";
 
 const NavBarMobile = () => {
     const {showMenu} = useNav()
@@ -11,15 +12,15 @@ const NavBarMobile = () => {
              left-1/2 transform -translate-x-1/2  bg-gradient-to-b from-amber-50 shadow-xl to-white 
              `}>
             <div className='flex flex-col gap-7 w-full items-center'>
-                <a href="#" className="hover:underline">Products</a>
-                <a href="#" className="hover:underline">Solutions</a>
-                <a href="#" className="hover:underline">Pricing</a>
-                <a href="#" className="hover:underline">Resources</a>
-                <a href="#" className="hover:underline">Log In</a>
-                <a role="menuitem" href="#"
-                   className="border-2 border-[#78350F] px-4 py-2 rounded hover:bg-[#78350F] hover:text-white">
-                    Sign up now
-                </a>
+
+                <Link href="post/" className="hover:underline">Products</Link>
+                <Link href="post/" className="hover:underline">Solutions</Link>
+                <Link href="post/" className="hover:underline">Pricing</Link>
+                <Link href="post/" className="hover:underline">Resources</Link>
+                <Link href="post/" className="hover:underline">Log In</Link>
+                <Link href="post/"
+                      className="border-2 border-[#78350F] px-4 py-2 rounded hover:bg-[#78350F] hover:text-white">Sign
+                    up now</Link>
             </div>
         </nav>)
 
