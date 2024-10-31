@@ -7,6 +7,7 @@ import InfiniteScrollPosts from "@/components/Post/Scroll infinito";
 import Link from "next/link";
 import Image from "next/image";
 import PaginatedPosts from "@/components/Post/PaginatedPosts";
+import LazyLoadingPosts from "@/components/Post/LazyLoadingPosts";
 
 const Posts = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
@@ -34,6 +35,8 @@ const Posts = async () => {
             <PaginatedPosts/>
 
             <InfiniteScrollPosts/>
+
+            <LazyLoadingPosts/>
 
             <UsersWithPosts/>
 
