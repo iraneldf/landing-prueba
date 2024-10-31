@@ -29,13 +29,6 @@ export default function MapCollection() {
                 height={633}
             />
 
-            {/*<Image*/}
-            {/*    className='absolute overflow-auto h-[633px] w-auto object-cover'*/}
-            {/*    src={'/images/map-section/chartResponsive.svg'}*/}
-            {/*    alt={'Mapa fondo'}*/}
-            {/*    layout={'fill'}*/}
-            {/*/>*/}
-
 
             {/*todo probar otros valo*/}
             <Image
@@ -46,6 +39,13 @@ export default function MapCollection() {
                 height={200}
                 style={{top: '65px', left: 'calc(50% - 510px)'}} // Fijo horizontalmente
             />
+
+            {/*<Image*/}
+            {/*    className='absolute overflow-auto h-[633px] w-auto object-cover'*/}
+            {/*    src={'/images/map-section/chartResponsive.svg'}*/}
+            {/*    alt={'Mapa fondo'}*/}
+            {/*    layout={'fill'}*/}
+            {/*/>*/}
 
 
         </div>

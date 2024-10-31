@@ -5,7 +5,7 @@ export default function Frame3() {
         <div className="px-[16px] pt-[16px] pb-[56px] xl:py-[160px] md:px-[80px] bg-white lg:bg-[#FFFBEB] relative">
 
             <div style={{boxShadow: '0px 20px 25px -5px rgba(0, 0, 0, 0.1)'}}
-                 className="bg-white xl:h-[496px] rounded-[30px] flex flex-col xl:flex-row justify-between items-center py-[32px] px[16px] gap-[32px] xl:gap-[80px] xl:p-[80px]">
+                 className="bg-white xl:h-[496px] rounded-[30px] flex flex-col xl:flex-row justify-between items-center py-[12px] px[16px] gap-[32px] xl:gap-[80px] xl:p-[80px]">
 
                 <div className='flex flex-col gap-[24px] items-center xl:items-start'>
 
@@ -52,7 +52,7 @@ export default function Frame3() {
                    width={713}
                    height={625.24}/>
 
-            <Image className='w-full absolute top-[170px] left-0 right-0  h-[520px] xl:hidden'
+            <Image className='w-full absolute top-[150px] left-0 right-0  h-[625px] xl:hidden'
                    src={'/images/Deco-video.svg'}
                    alt={"Decoracion responsivo"}
                    width={713}
@@ -67,6 +67,18 @@ export default function Frame3() {
             h-[86px]
             xl:block
             hidden
+            rounded-[50px]
+            bg-[#15803D]
+            opacity-[0.75]'/>
+
+            <div className='
+            z-20
+            absolute
+            bottom-[110px]
+            left-[55px]
+            w-[49px]
+            h-[50px]
+            md:hidden
             rounded-[50px]
             bg-[#15803D]
             opacity-[0.75]'/>
