@@ -1,13 +1,16 @@
 // import MyIcon from '@/public/i'
 import Image from "next/image";
+import NavBarMobile from "@/components/Nav/NavBarMobile";
 
 export default function Prensentacion() {
     return (
 
-        <>
+        <div className='flex flex-col relative'>
+
+            <NavBarMobile/>
 
             <div
-                className="z-10 flex flex-col space-y-[32px] py-[48px] px-[16px] lg:flex-row lg:justify-between lg:space-x-20 items-center lg:p-[80px] relative">
+                className="overflow-hidden z-20 flex flex-col space-y-[32px] py-[48px] px-[16px] lg:flex-row lg:justify-between lg:space-x-20 items-center lg:p-[80px] relative">
 
                 <div className="z-10 flex-col space-y-[32px] items-center text-center lg:text-justify">
 
@@ -20,8 +23,8 @@ export default function Prensentacion() {
                     <div className="w-full flex space-x-4 items-center justify-center lg:justify-start">
 
                         <button
-                            className="border-2 border-[#78350F] rounded-[8px] p-3 text-[#78350F] hover:bg-[#78350F] hover:text-white">Sign
-                            up now
+                            className="border-2 border-[#78350F] rounded-[8px] p-3 text-[#78350F] hover:bg-[#78350F] hover:text-white">
+                            <p className='px-[16px]'>Sign up now</p>
                         </button>
 
                         <button className="z-20 flex items-center rounded-[8px] text-[#78350F]">
@@ -46,16 +49,17 @@ export default function Prensentacion() {
                         height={423}
                     />
                 </div>
-                    {/*todo ajustar aki que tapa el navbar*/}
-                    <Image
-                        className='z-0 lg:hidden w-full absolute bottom-0 right-0 mb-0'
-                        src={'/images/Triangulo2.svg'}
-                        alt={'Triangulo fondo 2'}
-                        quality={100}
-                        width={500}
-                        height={500}
-                        objectFit="cover"
-                    />
+
+
+                <Image
+                    className='z-0 lg:hidden w-full absolute bottom-0 right-0 mb-0'
+                    src={'/images/Triangulo2.svg'}
+                    alt={'Triangulo fondo 2'}
+                    quality={100}
+                    width={500}
+                    height={500}
+                    objectFit="cover"
+                />
             </div>
 
             {/*///////////////////////////////////////*/}
@@ -86,8 +90,17 @@ export default function Prensentacion() {
 
 
             </div>
-        </>
 
+            <Image
+                className='z-0 self-end absolute bottom-0 right-0'
+                src={'/images/Rectangle 31.svg'}
+                alt={'Triangulo fondo'}
+                quality={100}
+                width={1428}
+                height={806}
+            />
+
+        </div>
     )
 }
 

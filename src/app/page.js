@@ -1,5 +1,4 @@
-import Image from "next/image";
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/Nav/NavBar";
 import Prensentacion from "@/components/Prensentacion";
 import Gallery from "@/components/Gallery";
 import Frame3 from "@/components/Frame3";
@@ -9,24 +8,15 @@ import Amazing from "@/components/Amazing";
 import Articles from "@/components/Articles";
 import MapCollection from "@/components/MapCollection";
 import Grow from "@/components/Grow";
+import {NavProvider} from "@/context/NavContext";
 
 export default function Home() {
-    return (
-        <div className='flex flex-col sm:bg-gradient-to-b sm:from-amber-50 sm:to-white '>
+    return (<div className='flex flex-col sm:bg-gradient-to-b sm:from-amber-50 sm:to-white '>
+
+
             <NavBar/>
-            <div className='flex flex-col relative'>
 
-                <Prensentacion/>
-
-                <Image
-                    className='absolute lg:block hidden bottom-0 right-0'
-                    src={'/images/Rectangle 31.svg'}
-                    alt={'Triangulo fondo'}
-                    quality={100}
-                    width={1428}
-                    height={806}
-                />
-            </div>
+            <Prensentacion/>
 
             <Gallery/>
 
@@ -43,6 +33,5 @@ export default function Home() {
             <Amazing/>
 
             <Fotter/>
-        </div>
-    );
+        </div>);
 }

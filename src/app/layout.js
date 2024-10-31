@@ -1,9 +1,10 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/NavBar";
+import Navbar from "@/components/Nav/NavBar";
 import {Roboto} from 'next/font/google';
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/Nav/NavBar";
 import {CarouselProvider} from "@/context/CarouselContext";
+import {NavProvider} from "@/context/NavContext";
 
 
 const roboto = Roboto({
@@ -22,7 +23,9 @@ export default function RootLayout({children}) {
         <body className={roboto.className}>
 
         <CarouselProvider>
-            <main className="w-full">{children}</main>
+            <NavProvider>
+                <main className="w-full">{children}</main>
+            </NavProvider>
         </CarouselProvider>
         </body>
         </html>
