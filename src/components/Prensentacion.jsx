@@ -66,22 +66,38 @@ export default function Prensentacion() {
             <div
                 className="flex flex-col justify-center lg:flex-row items-center gap-[32px] py-[48px] px-[16px] lg:gap-[80px] lg:p-[80px] bg-amber-100 lg:bg-transparent mt-0">
 
-                <div className="z-10 text-center flex flex-col items-center lg:text-justify lg:items-start ">
-                    <Image src={'/images/icons/trophy.svg'} alt={'Trofeo'} width={63} height={64}/>
+                <div className="z-10 text-center flex flex-col items-center lg:text-justify lg:items-start">
+
+                    <div className={'relative'}>
+                        <Image src={'/images/icons/trophy.svg'} alt={'Trofeo'} width={63} height={64}/>
+                        <Image src={'/images/icons/presentation/Figura1.svg'} className={'absolute top-0 left-[27px]'} alt={'fugira1'} width={63} height={64}/>
+                    </div>
+
                     <h3 className="mt-4 text-xl font-bold text-gray-900">Nibh viverra</h3>
                     <p className="mt-2 text-gray-700">Sit bibendum donec dolor fames neque vulputate non sit
                         aliquam.
                         Consequat turpis natoque leo, massa.</p>
                 </div>
                 <div className="z-10 text-center flex flex-col items-center  lg:text-justify lg:items-start">
-                    <Image src={'/images/icons/tunnel.svg'} alt={'Loma'} width={63} height={64}/>
+
+                    <div className={'relative'}>
+                        <Image src={'/images/icons/tunnel.svg'} alt={'Loma'} width={63} height={64}/>
+                        <Image src={'/images/icons/presentation/Figura2.svg'} className={'absolute top-[-12px] left-[27px] size-[54px] w-[54px] h-[54px]'}
+                               alt={'fugira2'} width={53} height={53}/>
+                    </div>
                     <h3 className="mt-4 text-xl font-bold text-gray-900">Cursus amet</h3>
-                    <p className="mt-2 text-gray-700">Sit bibendum donec dolor fames neque vulputate non sit
+                    <p className="mt-2  text-gray-700">Sit bibendum donec dolor fames neque vulputate non sit
                         aliquam.
                         Consequat turpis natoque leo, massa.</p>
                 </div>
                 <div className="z-10 text-center flex flex-col items-center  lg:text-justify lg:items-start">
-                    <Image src={'/images/icons/tv.svg'} alt={'Loma'} width={63} height={64}/>
+                    <div className={'relative'}>
+                        <Image src={'/images/icons/tv.svg'} alt={'Loma'} width={63} height={64}/>
+                        <Image src={'/images/icons/presentation/Figura3.svg'}
+                               className={'absolute top-[-6px] left-[42px] size-[54px] w-[54px] h-[54px]'}
+                               alt={'fugira2'} width={53} height={53}/>
+                    </div>
+
                     <h3 className="mt-4 text-xl font-bold text-gray-900">Ipsum fermentum</h3>
                     <p className="mt-2 text-gray-700">Sit bibendum donec dolor fames neque vulputate non sit
                         aliquam.
