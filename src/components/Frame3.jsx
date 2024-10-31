@@ -17,20 +17,22 @@ export default function Frame3() {
                             <Image className={'mr-[13.44px]'} src={'/images/icons/Check.svg'} alt={'Ckeck'}
                                    width={13.33} height={9.05}/>
 
-                            Est et in pharetra magna
-                            adipiscing ornare aliquam.
+                            <p className='text-[#21272A]'>Est et in pharetra magna
+                                adipiscing ornare aliquam.</p>
 
                         </li>
 
-                        <li className="flex items-center text-gray-700">
+                        <li className="flex items-center">
                             <Image className={'mr-[13.44px]'} src={'/images/icons/Check.svg'} alt={'Ckeck'}
                                    width={13.33} height={9.05}/>
-                            Tellus arcu sed consequat ac velit ut eu blandit.
+                            <p className='text-[#21272A]'> Tellus arcu sed consequat ac velit ut eu blandit.</p>
+
                         </li>
-                        <li className="flex items-center text-gray-700">
+                        <li className="flex items-center text-[#21272A]">
                             <Image className={'mr-[13.44px]'} src={'/images/icons/Check.svg'} alt={'Ckeck'}
                                    width={13.33} height={9.05}/>
-                            Ullamcorper ornare in et egestas dolor orci.
+                            <p className='text-[#21272A]'> Ullamcorper ornare in et egestas dolor orci.</p>
+
                         </li>
                     </ul>
 

@@ -16,7 +16,7 @@ export default function Prensentacion() {
 
                     <h1 className="text-5xl font-bold text-gray-900">Collectible Sneakers</h1>
 
-                    <p className="mt-4 text-gray-700">Sit elit feugiat turpis sed integer integer accumsan
+                    <p className="mt-4 text-[#0F172A] roboto">Sit elit feugiat turpis sed integer integer accumsan
                         turpis. Sed
                         suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices amet.</p>
 
@@ -24,7 +24,7 @@ export default function Prensentacion() {
 
                         <button
                             className="border-2 border-[#78350F] rounded-[8px] p-3 text-[#78350F] hover:bg-[#78350F] hover:text-white">
-                            <p className='px-[16px]'>Sign up now</p>
+                            <h1 className='px-[16px] font-[600]'>Sign up now</h1>
                         </button>
 
                         <button className="z-20 flex items-center rounded-[8px] text-[#78350F]">
@@ -34,7 +34,7 @@ export default function Prensentacion() {
                                 width={24}
                                 height={24}
                             />
-                            <p className='p-[8px]'> Watch Demo</p>
+                            <p className='p-[8px] '> Watch Demo</p>
                         </button>
 
                     </div>

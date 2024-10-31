@@ -10,7 +10,7 @@ export default function Gallery() {
         <div className="py-[48px] px-[16px] lg:p-[80px] bg-[#0F172A] w-[1,440px] flex flex-col gap-[80px] relative">
 
             <div className="flex flex-col lg:flex-row justify-between items-center gap-[32px] lg:gap-[80px] ">
-                <h1 className="text-[32px] leading-[35.2px] font-[700] text-center lg:text-5xl lg:leading-[61.6px] lg:text-left text-white">The
+                <h1 className="text-[32px] leading-[35.2px] font-bold text-center lg:text-5xl lg:leading-[61.6px] lg:text-left text-white">The
                     best of the best</h1>
 
                 <button
@@ -35,7 +35,7 @@ export default function Gallery() {
                     <div className='flex flex-col gap-[16px] pt-[32px] px-[32px]'>
                         <h2 className="text-[24px] font-bold text-white leading-[26.4px]">Title</h2>
 
-                        <p className="text-white text-[18px] font-[400] leading-[28.8px]">Egestas elit dui
+                        <p className="text-white text-[18px] leading-[28.8px]">Egestas elit dui
                             scelerisque ut eu purus aliquam vitae
                             habitasse.</p>
                     </div>

@@ -10,7 +10,7 @@ export default function CarruelItem({icon, tittle, content, avatar, name, rol}) 
                 <h1 className='font-bold text-[#475569] leading-[26.4px]'>{tittle}</h1>
             </div>
 
-            <p className='texto-limitado leading-[22.4px] lg:leading-[38.4px]'>{content}</p>
+            <p className='texto-limitado xl:min-h-[153px] leading-[22.4px] lg:leading-[38.4px]'>{content}</p>
 
             <div className='flex pt-[16px] items-center gap-[16px]'>
                 <Image className='inline mr-[3px]' src={avatar} alt={'avatar'}

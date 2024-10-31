@@ -24,14 +24,14 @@ export default function Grow() {
                         // style={{boxShadow: '4px 4px 6px -1px #0000001A'}}
                         className='items-center text-[20px] shadow-md flex bg-white rounded-[8px] p-[16px]'>
                         <Image src={'/images/icons/search.svg'} alt={'cohete'} width={24} height={24}/>
-                        <p className='px-[16px]'> Bibendum tellus</p>
+                        <h1 className='px-[16px] font-[500]'> Bibendum tellus</h1>
                     </button>
 
                     <button
                         className='group items-center text-[20px] justify-between hover:shadow-md flex hover:bg-white rounded-[8px] p-[16px]'>
                         <div className='items-center flex'>
                             <Image src={'/images/icons/shield.svg'} alt={'cohete'} width={24} height={24}/>
-                            <p className='px-[16px]'>Cras eget</p>
+                            <p className='px-[16px] font-[500]'>Cras eget</p>
                         </div>
                         <IoArrowForward
                             className='invisible xl:group-hover:visible'/> {/* Icono oculto por defecto */}
@@ -41,7 +41,7 @@ export default function Grow() {
                         className='group items-center text-[20px] justify-between hover:shadow-md flex hover:bg-white rounded-[8px] p-[16px]'>
                         <div className='items-center flex'>
                             <Image src={'/images/icons/rocket.svg'} alt={'cohete'} width={24} height={24}/>
-                            <p className='px-[16px]'>Dolor pharetra</p>
+                            <p className='px-[16px] font-[500]'>Dolor pharetra</p>
                         </div>
                         <IoArrowForward className='invisible  xl:group-hover:visible'/>
                     </button>
@@ -50,7 +50,7 @@ export default function Grow() {
                         className='group items-center text-[20px] justify-between hover:shadow-md flex hover:bg-white rounded-[8px] p-[16px]'>
                         <div className='items-center flex'>
                             <Image src={'/images/icons/screen.svg'} alt={'cohete'} width={24} height={24}/>
-                            <p className='px-[16px]'>Amet, fringilla</p>
+                            <p className='px-[16px] font-[500]'>Amet, fringilla</p>
                         </div>
                         <IoArrowForward className='invisible xl:group-hover:visible'/>
                     </button>
@@ -59,7 +59,7 @@ export default function Grow() {
                         className='group items-center text-[20px]  justify-between hover:shadow-md flex hover:bg-white rounded-[8px] p-[16px]'>
                         <div className='items-center flex'>
                             <Image src={'/images/icons/podcast.svg'} alt={'cohete'} width={24} height={24}/>
-                            <p className='px-[16px]'>Amet nibh</p>
+                            <p className='px-[16px] font-[500]'>Amet nibh</p>
                         </div>
                         <IoArrowForward className='invisible xl:group-hover:visible'/>
                     </button>
@@ -68,7 +68,7 @@ export default function Grow() {
                         className='group items-center justify-between text-[20px] hover:shadow-md flex hover:bg-white rounded-[8px] p-[16px]'>
                         <div className='items-center flex'>
                             <Image src={'/images/icons/settings-alt.svg'} alt={'cohete'} width={24} height={24}/>
-                            <p className='px-[16px]'>Sed velit</p>
+                            <p className='px-[16px] font-[500]'>Sed velit</p>
                         </div>
                         <IoArrowForward className='invisible xl:group-hover:visible'/>
                     </button>
@@ -87,7 +87,7 @@ export default function Grow() {
                         // style={{boxShadow: '4px 4px 6px -1px #0000001A'}}
                         className='items-center text-[20px] w-full justify-between shadow-md flex bg-white rounded-[8px] p-[16px]'>
                         <Image src={'/images/icons/search.svg'} alt={'cohete'} width={24} height={24}/>
-                        <p className='px-[16px]'> Bibendum tellus</p>
+                        <p className='px-[16px] font-[500]'> Bibendum tellus</p>
                         <IoArrowForward className='invisible xl:visible'/>
                     </button>
 
@@ -95,7 +95,7 @@ export default function Grow() {
                         className='group items-center text-[20px] justify-between hover:shadow-md flex hover:bg-white rounded-[8px] p-[16px]'>
                         <div className='items-center flex'>
                             <Image src={'/images/icons/shield.svg'} alt={'cohete'} width={24} height={24}/>
-                            <p className='px-[16px]'>Cras eget</p>
+                            <p className='px-[16px] font-[500]'>Cras eget</p>
                         </div>
                         <IoArrowForward
                             className='invisible xl:group-hover:visible'/> {/* Icono oculto por defecto */}
@@ -105,7 +105,7 @@ export default function Grow() {
                         className='group items-center text-[20px] justify-between hover:shadow-md flex hover:bg-white rounded-[8px] p-[16px]'>
                         <div className='items-center flex'>
                             <Image src={'/images/icons/rocket.svg'} alt={'cohete'} width={24} height={24}/>
-                            <p className='px-[16px]'>Dolor pharetra</p>
+                            <p className='px-[16px] font-[500]'>Dolor pharetra</p>
                         </div>
                         <IoArrowForward className='invisible  xl:group-hover:visible'/>
                     </button>
@@ -114,7 +114,7 @@ export default function Grow() {
                         className='group items-center text-[20px] justify-between hover:shadow-md flex hover:bg-white rounded-[8px] p-[16px]'>
                         <div className='items-center flex'>
                             <Image src={'/images/icons/screen.svg'} alt={'cohete'} width={24} height={24}/>
-                            <p className='px-[16px]'>Amet, fringilla</p>
+                            <p className='px-[16px] font-[500]'>Amet, fringilla</p>
                         </div>
                         <IoArrowForward className='invisible xl:group-hover:visible'/>
                     </button>
@@ -123,7 +123,7 @@ export default function Grow() {
                         className='group items-center text-[20px]  justify-between hover:shadow-md flex hover:bg-white rounded-[8px] p-[16px]'>
                         <div className='items-center flex'>
                             <Image src={'/images/icons/podcast.svg'} alt={'cohete'} width={24} height={24}/>
-                            <p className='px-[16px]'>Amet nibh</p>
+                            <p className='px-[16px] font-[500]'>Amet nibh</p>
                         </div>
                         <IoArrowForward className='invisible xl:group-hover:visible'/>
                     </button>
@@ -132,7 +132,7 @@ export default function Grow() {
                         className='group items-center justify-between text-[20px] hover:shadow-md flex hover:bg-white rounded-[8px] p-[16px]'>
                         <div className='items-center flex'>
                             <Image src={'/images/icons/settings-alt.svg'} alt={'cohete'} width={24} height={24}/>
-                            <p className='px-[16px]'>Sed velit</p>
+                            <p className='px-[16px] font-[500]'>Sed velit</p>
                         </div>
                         <IoArrowForward className='invisible xl:group-hover:visible'/>
                     </button>

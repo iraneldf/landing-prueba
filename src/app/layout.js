@@ -1,11 +1,8 @@
-import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/Nav/NavBar";
 import {Roboto} from 'next/font/google';
-import NavBar from "@/components/Nav/NavBar";
 import {CarouselProvider} from "@/context/CarouselContext";
 import {NavProvider} from "@/context/NavContext";
-
+import 'tailwindcss/tailwind.css'; // Asegúrate de que esta línea esté presente
 
 const roboto = Roboto({
     weight: '700',
@@ -20,7 +17,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html suppressHydrationWarning lang="en">
-        <body className={roboto.className}>
+        <body>
 
         <CarouselProvider>
             <NavProvider>

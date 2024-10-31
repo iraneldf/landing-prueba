@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import {useNav} from "@/context/NavContext";
+import Link from "next/link";
 
 const Navbar = () => {
 
@@ -14,14 +15,14 @@ const Navbar = () => {
             <div className="text-2xl font-bold text-[#78350F]">Collers</div>
 
             <nav className="space-x-6 text-[#78350F] hidden lg:block">
-                <a href="#" className="hover:underline">Products</a>
-                <a href="#" className="hover:underline">Solutions</a>
-                <a href="#" className="hover:underline">Pricing</a>
-                <a href="#" className="hover:underline">Resources</a>
-                <a href="#" className="hover:underline">Log In</a>
-                <a href="#"
-                   className="border-2 border-[#78350F] px-4 py-2 rounded hover:bg-[#78350F] hover:text-white">Sign
-                    up now</a>
+                <Link href="post/" className="hover:underline">Products</Link>
+                <Link href="post/"  className="hover:underline">Solutions</Link>
+                <Link href="post/"  className="hover:underline">Pricing</Link>
+                <Link href="post/"  className="hover:underline">Resources</Link>
+                <Link href="post/"  className="hover:underline">Log In</Link>
+                <Link href="post/"
+                      className="border-2 border-[#78350F] px-4 py-2 rounded hover:bg-[#78350F] hover:text-white">Sign
+                    up now</Link>
             </nav>
 
             <button

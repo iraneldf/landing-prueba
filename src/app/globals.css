@@ -17,11 +17,12 @@
 body {
     color: var(--foreground);
     background: var(--background);
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: Roboto, Roboto Light, Helvetica, sans-serif;
 }
 
-p{
-    font-weight: normal;
+p {
+    /*font-family: Roboto Light, Helvetica, sans-serif;*/
+    /*font-weight: normal;*/
 }
 
 .texto-limitado {
